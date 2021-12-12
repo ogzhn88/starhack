@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".matchesActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="285dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:textColor="@color/purple"
+        android:text="Matches"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/testId"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.2">
+
+        <TextView
+            android:id="@+id/firstmatch"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/firstButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="matches" />
+
+        <TextView
+            android:id="@+id/secondmatch"
+            android:layout_width="match_parent"
+
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/secondButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="matches" />
+
+        <TextView
+            android:id="@+id/thirthmatch"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/thirthButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="matches" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="360dp"
+        android:layout_height="58dp"
+        android:background="@drawable/firstscreenbutton"
+        android:gravity="center"
+        android:text="Send request"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testId"
+        app:layout_constraintVertical_bias="0.377" />
+</androidx.constraintlayout.widget.ConstraintLayout>
