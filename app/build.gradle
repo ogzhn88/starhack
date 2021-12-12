@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
+    id "org.sonarqube" version "3.3"
 }
+
 apply plugin: 'com.google.gms.google-services'
 android {
     compileSdk 32
